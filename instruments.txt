@@ -1,0 +1,91 @@
+vii-c-150-a-x
+ITEM: 1-1
+Schlagplattenspiel
+gender panerus (Gamelan)
+Indonesien / Zentral-Java
+
+vii-c-153-a-x
+ITEM: 1-2
+Schlagplattenspiel
+gender barung (Gamelan)
+Indonesien / Zentral-Java
+
+vii-c-156-a-x
+ITEM: 1-3
+Schlagplattenspiel
+gender panembung (Gamelan)
+Indonesien / Zentral-Java
+
+==================================
+
+VII c 182 a-o -A x
+ITEM: 2-1
+Gongspiel
+bonang barung (Gamelan)
+Indonesien / Zentral-Java
+
+VII c 308 a-u -B x
+ITEM: 2-2
+Gongspiel
+bonang (Gamelan Degung)
+Indonesien / West-Java
+
+==================================
+
+vii-c-171-a -A x
+ITEM: 3-1
+selbstständiger Gong
+ketuk (Gamelan)
+Indonesien / Zentral-Java
+
+vii-c-172-e -A x
+ITEM: 3-2
+Gongspiel
+kenong (Gamelan)
+Indonesien / Zentral-Java
+
+==================================
+
+vii-e-22-a-x
+ITEM: 4-1
+Zylindertrommel
+surdo
+Brasilien
+
+==================================
+
+I C 1479 b -A x
+ITEM: 5-1
+Gleitrassel
+angklung
+Indonesien / Java
+
+I C 1479 c -A x
+ITEM: 5-2
+Gleitrassel
+angklung
+Indonesien / Java
+
+I C 1479 d -A x
+ITEM: 5-3
+Gleitrassel
+angklung
+Indonesien / Java
+
+I C 1479 e -A x
+ITEM: 5-4
+Gleitrassel
+angklung
+Indonesien / Java
+
+I C 1479 f -A x
+ITEM: 5-5
+Gleitrassel
+angklung
+Indonesien / Java
+
+I C 1479 g -A x.jpg
+ITEM: 5-6
+Gleitrassel
+angklung
+Indonesien / Java
