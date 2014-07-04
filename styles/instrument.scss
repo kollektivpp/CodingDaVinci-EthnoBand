@@ -1,0 +1,167 @@
+#instrumentInfo {
+    // height: ;
+    width: 100%;
+    position: relative;
+    margin-bottom: -3px;
+
+    img.largeImage {
+        width: 100%;
+    }
+
+    .fadeOutOverlayTop {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 15px;
+
+        /*  Light blue */
+        // background: -moz-linear-gradient(top, rgba(241,255,252,1) 0%, rgba(241,255,252,0) 100%); /* FF3.6+ */
+        // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(241,255,252,1)), color-stop(100%,rgba(241,255,252,0))); /* Chrome,Safari4+ */
+        // background: -webkit-linear-gradient(top, rgba(241,255,252,1) 0%,rgba(241,255,252,0) 100%); /* Chrome10+,Safari5.1+ */
+        // background: linear-gradient(to bottom, rgba(241,255,252,1) 0%,rgba(241,255,252,0) 100%); /* W3C */
+    
+        /*  Light brown */
+        background: -moz-linear-gradient(top, rgba(231,217,203,1) 0%, rgba(231,217,203,0) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(231,217,203,1)), color-stop(100%,rgba(231,217,203,0))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, rgba(231,217,203,1) 0%,rgba(231,217,203,0) 100%); /* Chrome10+,Safari5.1+ */
+        background: linear-gradient(to bottom, rgba(231,217,203,1) 0%,rgba(231,217,203,0) 100%); /* W3C */
+    }
+}
+
+#keyboard {
+    // height: 100%;
+    width: 100%;
+    background-color: $colorKeyboardBackground;
+
+    .keys,
+    .drum,
+    .roundKeys {
+        @include flexbox;    
+    }
+
+    .keys,
+    .drum,
+    .roundKeys,
+    .roundKeysDouble {
+        &.invisible{
+            display: none;
+        }
+    }
+
+    .keys {
+        @include flex-direction(row);
+        @include align-items(center);
+        @include justify-content(center);
+        @include align-content(stretch);
+        
+        padding: 5px 10px 5px 10px;
+    }
+
+    .drum {
+        @include flex-direction(row);
+        @include align-items(center);
+        @include justify-content(center);
+        @include align-content(stretch);
+        
+        padding: 5px 10px 5px 10px;
+    }
+
+    .roundKeys {
+        @include flex-direction(row);
+        @include align-items(center);
+        @include justify-content(space-around);
+        @include align-content(stretch);
+        
+        padding: 5px 10px 5px 10px;
+        height: 100px;
+    }
+
+    .roundKeysDouble {
+        .upperRow,
+        .lowerRow {
+            @include flexbox;
+            @include flex-direction(row);
+            @include align-items(center);
+            @include justify-content(space-around);
+            @include align-content(stretch);
+            
+            height: 80px;
+        }
+    }
+
+    button.key {
+
+        @include appearanceReset();
+        position: relative;
+        background-color: $colorKeyMetal;
+        border: 1px solid $colorBlack;
+        // min-width: 40px;
+        // min-height: 120px;
+        height: 150px;
+        width: 100%;
+        // margin: 10px 5px 10px 5px;
+        
+        &:not(:last-child) {
+            border-right: none;  
+        }
+
+        .stringTop,
+        .stringBottom {
+            position: absolute;
+            left: 10%;
+            width: 80%;
+            height: 2px;
+            background-color: $colorKeyString;
+        }
+
+        .stringTop {
+            top: 10%;
+        }
+
+        .stringBottom {
+            bottom: 10%;
+        }
+    }
+
+    button.drumRing {
+        @include appearanceReset();
+        width: 200px;
+        height: 200px;
+        background-color: $colorDrumOuter;
+
+        border-radius: 50%;
+        border: 4px solid $colorBlack;
+
+        > .drumRing {
+            width: 50%;
+            height: 50%;
+            background-color: $colorDrumInner;
+            border: 2px solid $colorDrumBorder;
+        }
+    }
+
+    button.roundKey {
+        @include appearanceReset();
+        position: relative;
+        background-color: $colorKeyMetal;
+        border: 1px solid $colorBlack;
+        height: 75%;
+        width: 100%;
+        max-width: 45px;
+        max-height: 45px;
+        border-radius: 50%;
+
+        span{
+            width: 33%;
+            height: 33%;
+            background-color: $colorKeyCenter;
+            display: inline-block;
+            border-radius: 50%;
+            border: 1px solid $colorKeyCenterBorder;
+            position: absolute;
+            top: 33%;
+            left: 32%;
+            width: 33%;
+        }
+    }
+}

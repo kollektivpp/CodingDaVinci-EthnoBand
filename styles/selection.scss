@@ -1,0 +1,78 @@
+.instrumentListItem {
+    width: 75px;
+    height: 75px;
+    background-repeat: no-repeat;
+    background-size: 75px 75px;
+    border: 2px solid $colorMain;
+    margin-top: 4px;
+
+    &.item1-1 { background-image: url(../img/item1-1-thumb.jpg); }
+    &.item1-2 { background-image: url(../img/item1-2-thumb.jpg); }
+    &.item1-3 { background-image: url(../img/item1-3-thumb.jpg); }
+    &.item2-1 { background-image: url(../img/item2-1-thumb.jpg); }
+    &.item2-2 { background-image: url(../img/item2-2-thumb.jpg); }
+    &.item3-1 { background-image: url(../img/item3-1-thumb.jpg); }
+    &.item3-2 { background-image: url(../img/item3-2-thumb.jpg); }
+    &.item4-1 { background-image: url(../img/item4-1-thumb.jpg); }
+    &.item5-1 { background-image: url(../img/item5-1-thumb.jpg); }
+    &.item5-2 { background-image: url(../img/item5-2-thumb.jpg); }
+    &.item5-3 { background-image: url(../img/item5-3-thumb.jpg); }
+    &.item5-4 { background-image: url(../img/item5-4-thumb.jpg); }
+    &.item5-5 { background-image: url(../img/item5-5-thumb.jpg); }
+    &.item5-6 { background-image: url(../img/item5-6-thumb.jpg); }
+}
+
+.selectionOverlay {
+    position: relative;
+    max-width: 280px;
+    background-color: $colorWhite;
+    border: 2px solid $colorMain;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px;
+
+    padding: 10px 25px 10px 95px;
+
+    p,
+    h2 {
+        text-align: left;
+    }
+
+    .overlayThumb {
+        width: 75px;
+        height: 75px;
+        border: 2px solid $colorMain;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+
+    .overlayClose {
+        @include appearanceReset;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        font-size: 15px;
+        color: $colorMain;
+    }
+
+    .categoryLabel {
+        margin-top: 12px;
+        font-style: italic;
+    } 
+
+    .overlayName {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+
+    .overlayCategory {
+        margin-top: 5px;
+    }
+
+    a {
+        margin-top: 16px;
+        width: 100%;
+    }
+}
