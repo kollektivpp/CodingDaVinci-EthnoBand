@@ -48,7 +48,7 @@ ethnoBand.instrument = ethnoBand.instrument || {
             ui.keyboardKeys.append(keyPrototype);
         }
 
-        ui.keyboardKeys.find('.key').on('click', function(){ console.log('CLICKED');});
+        ethnoBand.sound.loadSoundFiles(itemNumber, numberOfSounds, ui.keyboardRoundKeys.find('.key'));
 
         ui.keyboardKeys.removeClass('invisible');
     },
@@ -67,15 +67,7 @@ ethnoBand.instrument = ethnoBand.instrument || {
             lastRingElement = lastRingElement.children('.drumRing');
         }
 
-        if(numberOfSounds > 0) {
-            console.log(ui.keyboardDrum.children('.drumRing'));
-            ui.keyboardDrum.children('.drumRing').on('click', function(event){event.stopPropagation(); console.log('OUTER');});
-        }
-
-        if (numberOfSounds > 1) {
-            console.log(ui.keyboardDrum.children('.drumRing').children('.drumRing'));
-             ui.keyboardDrum.children('.drumRing').children('.drumRing').on('click', function(event){event.stopPropagation(); console.log('INNER');});
-        }
+        ethnoBand.sound.loadSoundFiles(itemNumber, numberOfSounds, ui.keyboardDrum.find('.drumRing'));
 
         ui.keyboardDrum.removeClass('invisible');
     },
@@ -89,7 +81,7 @@ ethnoBand.instrument = ethnoBand.instrument || {
             ui.keyboardRoundKeys.append(roundKeyPrototype);
         }
 
-        ui.keyboardRoundKeys.find('.roundKey').on('click', function(){console.log('ROUND CLICK');});
+        ethnoBand.sound.loadSoundFiles(itemNumber, numberOfSounds, ui.keyboardRoundKeys.find('.roundKey'));
 
         ui.keyboardRoundKeys.removeClass('invisible');
     },
