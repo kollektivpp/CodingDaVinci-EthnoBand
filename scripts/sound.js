@@ -43,12 +43,15 @@ ethnoBand.sound = ethnoBand.sound || {
 
     createSoundNode: function(index, buffer, keyElements) {
         var sourceNode = ethnoBand.sound.context.createBufferSource(),
+            gainNode = ethnoBand.sound.context.createGain(),
             key = $(keyElements[index - 1]);
 
         ethnoBand.sound.soundBuffers[index] = buffer;
 
         sourceNode.buffer = buffer;
-        sourceNode.connect(ethnoBand.sound.context.destination);
+        sourceNode.connect(gainNode);
+        gainNode.connect(ethnoBand.sound.context.destination);
+        gainNode.gain.value = 0.4;
 
         ethnoBand.sound.soundNodes[index] = sourceNode;
 
@@ -74,7 +77,10 @@ ethnoBand.sound = ethnoBand.sound || {
 
         var newSoundNode = ethnoBand.sound.context.createBufferSource();
         newSoundNode.buffer = ethnoBand.sound.soundBuffers[soundIndex];
-        newSoundNode.connect(ethnoBand.sound.context.destination);
+        var newGainNode = ethnoBand.sound.context.createGain();
+        newSoundNode.connect(newGainNode);
+        newGainNode.connect(ethnoBand.sound.context.destination);
+        newGainNode.gain.value = 0.4;
 
         soundNodes[soundIndex] = newSoundNode;
     }

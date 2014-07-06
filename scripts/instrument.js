@@ -48,7 +48,7 @@ ethnoBand.instrument = ethnoBand.instrument || {
             ui.keyboardKeys.append(keyPrototype);
         }
 
-        ethnoBand.sound.loadSoundFiles(itemNumber, numberOfSounds, ui.keyboardRoundKeys.find('.key'));
+        ethnoBand.sound.loadSoundFiles(itemNumber, numberOfSounds, ui.keyboardKeys.find('.key'));
 
         ui.keyboardKeys.removeClass('invisible');
     },
@@ -98,7 +98,7 @@ ethnoBand.instrument = ethnoBand.instrument || {
             ui.keyboardRoundKeysDoubleLowerRow.append(roundKeyPrototype);
         }
 
-        ui.keyboardRoundKeysDouble.find('.roundKey').on('click', function(){console.log('ROUND DOUBLE CLICK');});
+        ethnoBand.sound.loadSoundFiles(itemNumber, numberOfSounds, ui.keyboardRoundKeysDouble.find('.roundKey'));
 
         ui.keyboardRoundKeysDouble.removeClass('invisible');
     }
