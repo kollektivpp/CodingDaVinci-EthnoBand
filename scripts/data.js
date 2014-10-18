@@ -22,12 +22,12 @@ ethnoBand.data = ethnoBand.data || {
 
         item4_1: ["vii-e-22-a-x", "surdo", "Zylindertrommel", "Brasilien", "DRUM", 2],
 
-        item5_1: ["I C 1479 b -A x", "angklung", "Gleitrassel", "Indonesien / Java", "DRUM", 2],
-        item5_2: ["I C 1479 c -A x", "angklung", "Gleitrassel", "Indonesien / Java", "DRUM", 2],
-        item5_3: ["I C 1479 d -A x", "angklung", "Gleitrassel", "Indonesien / Java", "DRUM", 2],
-        item5_4: ["I C 1479 e -A x", "angklung", "Gleitrassel", "Indonesien / Java", "DRUM", 2],
-        item5_5: ["I C 1479 f -A x", "angklung", "Gleitrassel", "Indonesien / Java", "DRUM", 2],
-        item5_6: ["I C 1479 g -A x", "angklung", "Gleitrassel", "Indonesien / Java", "DRUM", 2],
+        item5_1: ["I C 1479 b -A x", "angklung", "Gleitrassel", "Indonesien / Java", "RATTLE", 2],
+        item5_2: ["I C 1479 c -A x", "angklung", "Gleitrassel", "Indonesien / Java", "RATTLE", 2],
+        item5_3: ["I C 1479 d -A x", "angklung", "Gleitrassel", "Indonesien / Java", "RATTLE", 2],
+        item5_4: ["I C 1479 e -A x", "angklung", "Gleitrassel", "Indonesien / Java", "RATTLE", 2],
+        item5_5: ["I C 1479 f -A x", "angklung", "Gleitrassel", "Indonesien / Java", "RATTLE", 2],
+        item5_6: ["I C 1479 g -A x", "angklung", "Gleitrassel", "Indonesien / Java", "RATTLE", 2],
     },
 
     getData: function (itemString) {

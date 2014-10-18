@@ -25,6 +25,9 @@ ethnoBand.instrument = ethnoBand.instrument || {
         if (instrumentData.keyboard === "ROUND_KEYS_DOUBLE") {
             this.setupRoundKeysDouble(itemNumber, instrumentData.numberOfSounds);
         }
+        if (instrumentData.keyboard === "RATTLE") {
+            this.setupRattle(itemNumber, instrumentData.numberOfSounds);
+        }
     },
 
     UI: {
@@ -36,6 +39,7 @@ ethnoBand.instrument = ethnoBand.instrument || {
         keyboardRoundKeysDouble: $('#keyboard .roundKeysDouble'),
         keyboardRoundKeysDoubleUpperRow: $('#keyboard .roundKeysDouble .upperRow'),
         keyboardRoundKeysDoubleLowerRow: $('#keyboard .roundKeysDouble .lowerRow'),
+        keyboardRattle: $('#keyboard .rattle')
     },
 
     setupKeys: function(itemNumber, numberOfSounds) {
@@ -100,5 +104,17 @@ ethnoBand.instrument = ethnoBand.instrument || {
         ethnoBand.sound.loadSoundFiles(itemNumber, numberOfSounds, ui.keyboardRoundKeysDouble.find('.roundKey'));
 
         ui.keyboardRoundKeysDouble.removeClass('invisible');
+    },
+
+    setupRattle: function (itemNumber, numberOfSounds) {
+        var ui = ethnoBand.instrument.UI,
+            rattlePrototype = '<button class="rattleKey"></button>';
+
+        ui.keyboardRattle.append(rattlePrototype);
+
+        // TODO: Implement variable number of sounds after the cutting session
+        ethnoBand.sound.loadRoundRobinFiles(itemNumber, 2, ui.keyboardRattle.find('.rattleKey'));
+
+        ui.keyboardRattle.removeClass('invisible');
     }
 };
