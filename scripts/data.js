@@ -34,12 +34,14 @@ ethnoBand.data = ethnoBand.data || {
         var dataObject = {},
             plainDataObject = this.getEntryForNumber(itemString);
 
+        if (plainDataObject) {  
             dataObject.id = plainDataObject[0];
             dataObject.name = plainDataObject[1];
             dataObject.category = plainDataObject[2];
             dataObject.origin = plainDataObject[3];
             dataObject.keyboard = plainDataObject[4];
             dataObject.numberOfSounds = plainDataObject[5];
+        }
 
         return dataObject;
     },

@@ -13,7 +13,6 @@ ethnoBand.instrument = ethnoBand.instrument || {
         var itemNumber = location.search.split("=")[1],
             instrumentData = ethnoBand.data.getData(itemNumber);
 
-
         if (instrumentData.keyboard === "KEYS") {
             this.setupKeys(itemNumber, instrumentData.numberOfSounds);
         }
