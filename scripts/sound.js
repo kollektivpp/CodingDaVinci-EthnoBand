@@ -165,13 +165,13 @@ ethnoBand.sound = ethnoBand.sound || {
             }
         }
 
-        // console.log(randomIndex);
         if (soundNodes[backupIndex]) {
-            soundNodes[backupIndex].stop(4);
+            // For the relly short rattle sounds, no sound stop is needed.
+            // soundNodes[backupIndex].stop(1);
         }
 
         soundNodes[randomIndex].start(0);
-        soundNodes[backupIndex] = soundNodes[randomIndex];
+        // soundNodes[backupIndex] = soundNodes[randomIndex];
 
         soundNodes[randomIndex] = ethnoBand.sound.createSoundNode(ethnoBand.sound.soundBuffers[randomIndex]);
 

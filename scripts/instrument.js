@@ -113,7 +113,7 @@ ethnoBand.instrument = ethnoBand.instrument || {
         ui.keyboardRattle.append(rattlePrototype);
 
         // TODO: Implement variable number of sounds after the cutting session
-        ethnoBand.sound.loadRoundRobinFiles(itemNumber, 2, ui.keyboardRattle.find('.rattleKey'));
+        ethnoBand.sound.loadRoundRobinFiles(itemNumber, numberOfSounds, ui.keyboardRattle.find('.rattleKey'));
 
         ui.keyboardRattle.removeClass('invisible');
     }
