@@ -13,18 +13,6 @@
         top: 0px;
         width: 100%;
         height: 15px;
-
-        /*  Light blue */
-        // background: -moz-linear-gradient(top, rgba(241,255,252,1) 0%, rgba(241,255,252,0) 100%); /* FF3.6+ */
-        // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(241,255,252,1)), color-stop(100%,rgba(241,255,252,0))); /* Chrome,Safari4+ */
-        // background: -webkit-linear-gradient(top, rgba(241,255,252,1) 0%,rgba(241,255,252,0) 100%); /* Chrome10+,Safari5.1+ */
-        // background: linear-gradient(to bottom, rgba(241,255,252,1) 0%,rgba(241,255,252,0) 100%); /* W3C */
-    
-        /*  Light brown */
-        // background: -moz-linear-gradient(top, rgba(231,217,203,1) 0%, rgba(231,217,203,0) 100%); /* FF3.6+ */
-        // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(231,217,203,1)), color-stop(100%,rgba(231,217,203,0))); /* Chrome,Safari4+ */
-        // background: -webkit-linear-gradient(top, rgba(231,217,203,1) 0%,rgba(231,217,203,0) 100%); /* Chrome10+,Safari5.1+ */
-        // background: linear-gradient(to bottom, rgba(231,217,203,1) 0%,rgba(231,217,203,0) 100%); /* W3C */
     
          /*  Light grey */
         background: -moz-linear-gradient(top, rgba(222,222,222,1) 0%, rgba(222,222,222,0) 100%); /* FF3.6+ */
@@ -112,11 +100,8 @@
         position: relative;
         background-color: $colorKeyMetal;
         border: 1px solid $colorBlack;
-        // min-width: 40px;
-        // min-height: 120px;
         height: 150px;
         width: 100%;
-        // margin: 10px 5px 10px 5px;
         
         &:not(:last-child) {
             border-right: none;  
