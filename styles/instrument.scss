@@ -102,6 +102,7 @@
         border: 1px solid $colorBlack;
         height: 150px;
         width: 100%;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
         
         &:not(:last-child) {
             border-right: none;  
