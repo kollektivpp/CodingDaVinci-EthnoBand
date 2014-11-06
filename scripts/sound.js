@@ -109,10 +109,21 @@ ethnoBand.sound = ethnoBand.sound || {
         if (keyElement.hasClass('rattleKey')) {
             this.roundRobinMeta.numberOfSounds = numberOfSounds;
             setTimeout(function() {
-               ethnoBand.sound.rattleMeta.newSoundThreshold = parseInt($(window).width() / 2, 10);
-           }, 0);
+               ethnoBand.sound.rattleMeta.newSoundThreshold = ethnoBand.sound.calculateRattleKeyThreshold();
+            }, 0);
             keyElement.on('touchmove', this.rattleSoundHandler);
+            $(window).on('orientationchange', function() {
+                // The timeout is needed to ensure that the new width has already been set.
+                setTimeout(function() {
+                    ethnoBand.sound.rattleMeta.newSoundThreshold = ethnoBand.sound.calculateRattleKeyThreshold();
+                }, 300);
+            });
         }
+    },
+
+    // Returns the x-axis center of the rattle key
+    calculateRattleKeyThreshold: function() {
+        return parseInt($(window).width() / 2, 10);
     },
 
     onLoadRoundRobinFile: function() {
