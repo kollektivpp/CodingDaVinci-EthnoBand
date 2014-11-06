@@ -169,7 +169,7 @@ ethnoBand.sound = ethnoBand.sound || {
         if (randomIndex === ethnoBand.sound.roundRobinMeta.lastIndex) {
             if (randomIndex > 0) {
                 randomIndex--;
-            } else if (randomIndex < ethnoBand.sound.roundRobinMeta.numberOfSounds - 1) {
+            } else if (randomIndex < ethnoBand.sound.roundRobinMeta.numberOfSounds - 1) {
                 randomIndex++;
             }
         }

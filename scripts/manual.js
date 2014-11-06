@@ -33,7 +33,7 @@ ethnoBand.manual = ethnoBand.manual || {
 
         if (webAudioAvailable && touchEventsAvailable) {
             UI.warningWrapper.css('display', 'none');
-        } else {
+        } else {
             if (touchEventsAvailable) {
                 UI.warningTouchEventsParagraph.css('display', 'none');
             }
