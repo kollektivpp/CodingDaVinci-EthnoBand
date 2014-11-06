@@ -17,7 +17,7 @@ ethnoBand.data = ethnoBand.data || {
         item2_1: ["VII c 182 a-o -A x", "bonang barung (Gamelan)", "Gongspiel", "Indonesien / Zentral-Java", "ROUND_KEYS_DOUBLE", 14],
         item2_2: ["VII c 308 a-u -B x", "bonang (Gamelan Degung)", "Gongspiel", "Indonesien / West-Java", "ROUND_KEYS", 6],
 
-        item3_1: ["vii-c-171-a -A x", "ketuk (Gamelan)", "selbstst&auml;ndiger Gong", "Indonesien / Zentral-Java", "DRUM", 1],
+        item3_1: ["vii-c-171-a -A x", "ketuk (Gamelan)", "selbstständiger Gong", "Indonesien / Zentral-Java", "DRUM", 1],
         item3_2: ["vii-c-172-e -A x", "kenong (Gamelan)", "Gongspiel", "Indonesien / Zentral-Java", "DRUM", 1],
 
         item4_1: ["vii-e-22-a-x", "surdo", "Zylindertrommel", "Brasilien", "DRUM", 2],

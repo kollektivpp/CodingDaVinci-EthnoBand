@@ -72,3 +72,10 @@ p {
     @include align-items(center);
     @include justify-content(center);
 }
+
+.helpWrapper {
+    position: fixed;
+    top: 10px;
+    left: 5%;
+    width: 90%;
+}

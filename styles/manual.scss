@@ -1,6 +1,6 @@
-.warningOverlay {
+.warningOverlay,
+.helpOverlay {
     position: relative;
-    max-width: 280px;
     background-color: $colorWhite;
     border: 2px solid $colorMain;
     border-radius: 10px;
@@ -32,7 +32,60 @@
         margin-bottom: 10px;
     }
 
+    .overlayHeadline {
+        // margin-top: 10px;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
     .overlayParagraph {
         margin-top: 5px;
+
+        a {
+            text-decoration: underline;
+            font-weight: bold;
+            color: $colorMain;
+        }
+    }
+}
+
+.warningOverlay {
+    max-width: 280px;
+}
+
+.sectionMoreInfo {
+    width: 100%;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.helpButton {
+    @include appearanceReset;
+
+    &:active {
+        color: $colorHelpButtonActive;
+        border-color: $colorHelpButtonActive;
+    }
+
+    &.keyboardHelp {
+        position: absolute;
+        float: left;
+        top: 30px;
+        right: 15px;
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+        padding-left: 1px; //This makes the question mark appear nicely positioned
+        color: $colorHelpButton;
+        border: 2px solid $colorHelpButton;
+        border-radius: 16px;
+    }
+
+    &.moreInfo {
+        text-decoration: underline;
+        color: $colorHelpButtonActive;
     }
 }

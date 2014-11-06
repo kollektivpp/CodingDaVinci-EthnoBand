@@ -2,7 +2,7 @@
  * COLORS
  */
 
-$colorMain: #2c2250;
+$colorMain: rgba(44,34,80,1);
 $colorWhite: #ffffff;
 $colorBlack: #000000;
 // $colorBackground: #f1fffc; // light blue
@@ -18,3 +18,5 @@ $colorDrumInner: #d6d6d6;
 $colorDrumBorder: #cecece;
 $colorRattle: #f3f3f3;
 $colorRattleBorder: #000000;
+$colorHelpButton: rgba(44,34,80,0.5); //$colorMain but with alpha = 0.5
+$colorHelpButtonActive: $colorMain;
