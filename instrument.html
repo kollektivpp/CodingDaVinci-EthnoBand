@@ -21,6 +21,17 @@
             <div class="logo"></div>
         </section>
 
+        <div class="warningWrapper">
+            <div class="warningOverlay">
+                <button class="overlayClose">X</button>
+                <p class="overlaySmiley">:-(</p>
+                <p class="overlayParagraph">Der Browser mit dem Sie diese Seite aufrufen bietet leider nicht die technischen Voraussetzungen, um EthnoBand zu benutzen.</p>
+                <p class="overlayParagraph touchNotAvailable">EthnoBand lässt sich nur mit TouchEvents bedienen. Sie brauchen also ein Gerät mit Touchscreen.</p>
+                <p class="overlayParagraph webAudioNotAvailable">Die Sound Engine von EthnoBand basiert auf der Web Audio API. Ihr Browser unterstützt diese Technologie leider nicht.</p>
+                <p class="overlayParagraph">Probieren Sie EthnoBand doch mal mit einem iOS-Gerät (7.0 oder höher) oder einem Android-Gerät (4.0 oder höher) aus!</p>
+            </div>    
+        </div>
+
         <section id="instrumentInfo">
             <div class="fadeOutOverlayTop"></div>
             <img src="" alt="" class="largeImage">
@@ -38,6 +49,7 @@
         </section>
 
         <script src="scripts/jquery-2.1.1.min.js"></script>
+        <script src="scripts/manual.js"></script>
         <script src="scripts/data.js"></script>
         <script src="scripts/sound.js"></script>
         <script src="scripts/list.js"></script>

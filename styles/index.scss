@@ -64,7 +64,8 @@ p {
     font-size: 15px;
 }
 
-.overlayWrapper {
+.overlayWrapper,
+.warningWrapper {
     width: 97.5%;
     position: absolute;
     @include flexbox();

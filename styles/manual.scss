@@ -1,0 +1,38 @@
+.warningOverlay {
+    position: relative;
+    max-width: 280px;
+    background-color: $colorWhite;
+    border: 2px solid $colorMain;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px;
+
+    padding: 10px 20px 10px 20px;
+    z-index: 100;
+
+    p,
+    h2 {
+        text-align: left;
+    }
+
+    .overlayClose {
+        @include appearanceReset;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        font-size: 15px;
+        color: $colorMain;
+    }
+
+    .overlaySmiley {
+        font-size: 40px;
+        font-style: bold;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .overlayParagraph {
+        margin-top: 5px;
+    }
+}
