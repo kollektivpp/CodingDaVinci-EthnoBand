@@ -146,13 +146,11 @@ ethnoBand.sound = ethnoBand.sound || {
 
         if (lastSoundPosition < newSoundThreshold) {
             if (posX > newSoundThreshold) {
-                // console.log("new sound high");
                 ethnoBand.sound.playRoundRobinSound();
                 ethnoBand.sound.rattleMeta.lastSoundPosition = posX;
             }
         } else {
             if (posX < newSoundThreshold) {
-                // console.log("new sound low");
                 ethnoBand.sound.playRoundRobinSound();
                 ethnoBand.sound.rattleMeta.lastSoundPosition = posX;
             }
@@ -176,10 +174,10 @@ ethnoBand.sound = ethnoBand.sound || {
             }
         }
 
-        if (soundNodes[backupIndex]) {
+        // if (soundNodes[backupIndex]) {
             // For the relly short rattle sounds, no sound stop is needed.
             // soundNodes[backupIndex].stop(1);
-        }
+        // }
 
         soundNodes[randomIndex].start(0);
         // soundNodes[backupIndex] = soundNodes[randomIndex];
