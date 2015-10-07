@@ -28,6 +28,11 @@ ethnoBand.instrument = ethnoBand.instrument || {
         if (instrumentData.keyboard === "RATTLE") {
             this.setupRattle(itemNumber, instrumentData.numberOfSounds);
         }
+
+        // Workaround to activate the sound engine on iOS9, because the touchstart event can't be used anymore (might be a bug)
+        $('#keyboard').one('touchend', function() {
+            ethnoBand.sound.context.createOscillator().start();
+        });
     },
 
     UI: {
