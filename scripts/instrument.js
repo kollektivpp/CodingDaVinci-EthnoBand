@@ -30,8 +30,10 @@ ethnoBand.instrument = ethnoBand.instrument || {
         }
 
         // Workaround to activate the sound engine on iOS9, because the touchstart event can't be used anymore (might be a bug)
-        $('#keyboard').one('touchend', function() {
-            ethnoBand.sound.context.createOscillator().start();
+        $('html').on('touchend', function() {
+            var startOsc = ethnoBand.sound.context.createOscillator();
+            startOsc.start();
+            startOsc.stop();
         });
     },
 
